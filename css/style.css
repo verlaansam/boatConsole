@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 800px;
+    height: 480px;
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+section{
+    width: 684px;
+    height: 455px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+article{
+    margin: 5px;
+    background: #161616;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 14px;
+}
+
+h3{
+    font-size: 20;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 23;
+}
+
+.sideItem{
+    position: absolute;
+    margin: 5px;
+    width: 86px;
+    height: 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.sideItem > p {
+    margin-right: 2px;
+}
+
+img{
+    position: absolute;
+}
+
+.sideItemSignal{
+    left: 68px;
+     top: 245px;
+}
+
+.chart{
+    grid-column: 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
+
+#speedPointer{
+    transform-origin: center right;
+    top: 120px; 
+    left: 110px;
+}
+
+#speedCenter{
+    position: absolute;
+    top: 120px;
+    left: 135px;
+    width: 112px;
+    height: 60px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#depthCenter{
+    position: absolute;
+    top: 85px;
+    left: 555px;
+    width: 112px;
+    height: 60px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#courseCenter{
+    position: absolute;
+    width: 178px;
+    height: 19px;
+    left: 90px;
+    top: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#depthBar{
+    position: absolute;
+    width: 15px;
+    height: 180px;
+    left: 700px;
+    top: 32px; 
+    background: linear-gradient(180deg, #E90000 0%, #29CE00 100%);
+}
+
+#depthPointer{
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    left: 690px;
+    top: 190px;
+
+}
+
+#map{
+    height: 445px;
+    border-radius: 5px;
+}
+
+#headingLine{
+    position: absolute;
+    width: 3px;
+    height: 110px;
+    background-color: #E90000;
+    top: 110px;
+    left: 390px;
+    z-index: 10000;
+    transform-origin: 100% 100%;
+}
+
+#centerMap{
+    position: absolute;
+    top: 25px;
+    left: 485px;
+    z-index: 10000;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.olImageLoadError {
+    display: none !important;
+}

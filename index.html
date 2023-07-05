@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <script src="./js/main.js"></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+
+		<!-- bring in the OpenStreetMap OpenLayers layers.
+			Using this hosted file will make sure we are kept up
+			to date with any necessary changes -->
+		<script src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+		<script type="text/javascript" src="/js/map.js"></script>
+</head>
+<body ">
+    <section>
+        <article id="speedArticle">
+            <div class="sideItem" style="left: 63px; top: 14px;">
+                <p>dist</p><h3>25.8</h3><p>nm</p>
+            </div>
+            <div class="sideItem" style="left: 63px; top: 204px;">
+                <p>avg</p><h3>3.6</h3><p>m/s</p>
+            </div>
+            <div class="sideItem" style="left: 190px; top: 204px;">
+                <p>max</p><h3>7.4</h3><p>m/s</p>
+            </div>
+            <img src="./img/speed.svg" style="top: 50px; left: 105px;">
+            <img id="speedPointer" src="./img/pointer.svg">
+            <div id="speedCenter">
+                <h1 id="speed"></h1><h2>kn</h2>
+            </div>
+        </article>
+        <article class="chart">
+            <div style="width:220px; height:445px" id="map"></div>
+            <div id="centerMap">O</div>
+            <div id="headingLine"></div>
+        </article>
+        <article>
+            <div class="sideItem" style="left: 520px; top: 14px;">
+                <img id="depthAlarm" src="./img/volumeOn.svg" alt="" onclick="depthAlarmSound()">
+            </div>
+            <div class="sideItem" style="left: 520px; top: 204px; width: 124px;">
+                <p>alarm depth</p><h3>0.5</h3><p>m</p>
+            </div>
+            <div id="depthCenter">
+                <h1 id="depth">0.6</h1><h2>m</h2>
+            </div>
+            <div id="depthBar"></div>
+            <img id="depthPointer" src="./img/pointerDepth.svg" >
+        </article>
+        
+        <article>
+            <div class="sideItemSignal" ">
+                <img id="gpsSignal" src="./img/signal.svg" alt="" style="left: 68px; top: 245px;"">
+            </div>
+            <div id="courseCenter">
+                <p id="cordinatesHeading">52°45'44.6"N 5°26'48.9"E</p>
+                <h1 id="courseHeading">n/a°</h1>
+                <p>Heading</p>
+            </div>
+            <div id="depthBar"></div>
+            <img id="depthPointer" src="./img/pointerDepth.svg" >
+        </article>
+        <article>hi</article>
+    </section>    
+   
+</body>
+</html>
